@@ -25,17 +25,13 @@ public class ThreadActivity extends Activity {
             @Override
             public void run() {
                 MyLog.d("");
-                try{
-                    Thread.sleep(SLEEP_TIME);
-                }catch (InterruptedException e){
-                    // do nothing
-                }
+                final String result = Common.getResult(ThreadActivity.this);
 
                 new Handler(getMainLooper()).post(new Runnable() {
                     @Override
                     public void run() {
                         MyLog.d("" + ThreadActivity.this);
-                        tv.setText(R.string.calulate_finish);
+                        tv.setText(result);
                         MyLog.d(" tv = " + tv);
                     }
                 });

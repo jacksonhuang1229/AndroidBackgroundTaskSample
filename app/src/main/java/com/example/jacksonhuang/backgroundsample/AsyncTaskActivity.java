@@ -27,13 +27,7 @@ public class AsyncTaskActivity extends Activity {
 
             @Override
             protected String doInBackground(Void... voids) {
-                MyLog.d("");
-                try{
-                    Thread.sleep(SLEEP_TIME);
-                }catch (InterruptedException e){
-                    // do nothing
-                }
-                return getString(R.string.calulate_finish);
+                return Common.getResult(AsyncTaskActivity.this);
             }
 
             @Override
