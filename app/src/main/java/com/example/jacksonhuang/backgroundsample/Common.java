@@ -1,4 +1,4 @@
-package com.example.gameg.myapplication;
+package com.example.jacksonhuang.backgroundsample;
 
 /**
  * Created by gameg on 2018/2/14.

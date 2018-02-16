@@ -1,20 +1,19 @@
-package com.example.gameg.myapplication;
+package com.example.jacksonhuang.backgroundsample;
 
 import android.app.Activity;
-import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
 import android.widget.TextView;
 
 import com.squareup.leakcanary.RefWatcher;
 
-import static com.example.gameg.myapplication.Common.SLEEP_TIME;
+import static com.example.jacksonhuang.backgroundsample.Common.SLEEP_TIME;
 
 /**
  * Created by gameg on 2018/2/14.
  */
 
-public class AsyncTaskActivity extends Activity {
-
+public class ThreadActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,27 +21,27 @@ public class AsyncTaskActivity extends Activity {
         MyLog.d("" + this);
         final TextView tv = findViewById(R.id.text);
         MyLog.d(" tv = " + tv);
-
-        new AsyncTask<Void,Void,String>(){
-
+        new Thread(new Runnable() {
             @Override
-            protected String doInBackground(Void... voids) {
+            public void run() {
                 MyLog.d("");
                 try{
                     Thread.sleep(SLEEP_TIME);
                 }catch (InterruptedException e){
                     // do nothing
                 }
-                return getString(R.string.calulate_finish);
-            }
 
-            @Override
-            protected void onPostExecute(String s) {
-                MyLog.d("" + AsyncTaskActivity.this);
-                tv.setText(s);
-                MyLog.d(" tv = " + tv);
+                new Handler(getMainLooper()).post(new Runnable() {
+                    @Override
+                    public void run() {
+                        MyLog.d("" + ThreadActivity.this);
+                        tv.setText(R.string.calulate_finish);
+                        MyLog.d(" tv = " + tv);
+                    }
+                });
+
             }
-        }.execute();
+        }).start();
     }
 
     @Override

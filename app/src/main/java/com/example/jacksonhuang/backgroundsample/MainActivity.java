@@ -1,4 +1,4 @@
-package com.example.gameg.myapplication;
+package com.example.jacksonhuang.backgroundsample;
 
 import android.content.Intent;
 import android.os.Bundle;

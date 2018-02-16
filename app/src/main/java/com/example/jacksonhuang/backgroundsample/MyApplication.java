@@ -1,4 +1,4 @@
-package com.example.gameg.myapplication;
+package com.example.jacksonhuang.backgroundsample;
 
 import android.app.Application;
 import android.content.Context;

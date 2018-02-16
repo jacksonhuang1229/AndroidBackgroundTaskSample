@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">BackgroundSample</string>
     <string name="thread">Thread</string>
     <string name="asynctask">AsyncTask</string>
 
