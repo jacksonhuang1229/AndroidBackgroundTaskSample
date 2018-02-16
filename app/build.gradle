@@ -28,4 +28,8 @@ dependencies {
 
     // memory leak
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+
+    // rxjava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+
 }

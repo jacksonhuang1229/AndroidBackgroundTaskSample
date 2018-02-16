@@ -19,6 +19,7 @@
         <activity android:name="com.example.jacksonhuang.backgroundsample.ThreadActivity"/>
         <activity android:name="com.example.jacksonhuang.backgroundsample.AsyncTaskActivity"/>
         <activity android:name="com.example.jacksonhuang.backgroundsample.IntentServiceActivity"/>
+        <activity android:name=".RxJavaActivity"/>
         <service android:name=".MyIntentService"/>
 
     </application>
