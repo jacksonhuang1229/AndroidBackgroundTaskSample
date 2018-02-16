@@ -8,4 +8,7 @@
     <string name="calulating">calulating</string>
     <string name="calulate_finish">caculate finish , result = xxx </string>
 
+    <string name="set_sleep_time">Set sleep time</string>
+    <string name="seconds">Seconds</string>
+    <string name="save">Save</string>
 </resources>
