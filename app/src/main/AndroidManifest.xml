@@ -22,10 +22,9 @@
         <activity android:name=".IntentServiceActivity" />
         <activity android:name=".RxJavaActivity" />
         <activity android:name=".RxJavaKotlinActivity" />
-
+        <activity android:name=".KotlinCoroutinesActivity" />
         <service android:name=".MyIntentService" />
 
-        <activity android:name=".RxJavaKotlinActivity"></activity>
     </application>
 
 </manifest>

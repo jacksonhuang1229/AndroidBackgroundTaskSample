@@ -98,6 +98,15 @@
                 android:text="@string/rxjava_kotlin"
                 android:textAllCaps="false"
                 />
+            <Button
+                android:id="@+id/btn_kotlin_coroutines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="@string/kotlin_coroutines"
+                android:textAllCaps="false"
+                />
 
         </LinearLayout>
     </ScrollView>

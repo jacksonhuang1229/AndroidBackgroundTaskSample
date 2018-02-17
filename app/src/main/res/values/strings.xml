@@ -4,7 +4,8 @@
     <string name="asynctask">AsyncTask</string>
     <string name="intentservice">IntentService</string>
     <string name="rxjava">RxJava</string>
-    <string name="rxjava_kotlin">RxJavaKotlin</string>
+    <string name="rxjava_kotlin">RxJava Kotlin</string>
+    <string name="kotlin_coroutines">Kotlin Coroutines</string>
 
     <string name="calulating">calulating</string>
     <string name="calulate_finish">caculate finish , result = xxx </string>
