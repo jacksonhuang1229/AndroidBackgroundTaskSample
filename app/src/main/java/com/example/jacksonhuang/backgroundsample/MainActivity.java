@@ -46,6 +46,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getBaseContext() , RxJavaActivity.class));
             }
         });
+        findViewById(R.id.btn_rxjava_kotlin).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getBaseContext() , RxJavaKotlinActivity.class));
+            }
+        });
 
         // edit sleep time
         final EditText editText = findViewById(R.id.edit_sleep);
